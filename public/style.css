@@ -1,0 +1,350 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+  
+  body {
+    margin: 0;
+  }
+header{
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    
+}
+.head{
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+
+    
+    
+
+}
+.race-logo{
+    width: 10%;
+    margin: 0 1em;
+    
+}
+.race-logo-1{
+    width: 10%;
+    margin:0 1em;
+    
+}
+img{
+    max-width: 100%;
+    max-height: 100px;
+}
+.score{
+    background-image: url(./assets/image\ 65\ \(1\).png);
+    background-size: cover;
+    height: 1100px;
+    padding-top: 1em;
+}
+.card{
+
+    width: 85%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 1100px;
+    border-bottom-right-radius: 50px;
+    padding: 0.8em 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8em;
+    border: 1.5px solid gray;
+}
+
+.card .time{
+    margin-right: 1.5em;
+}
+.serial{
+    
+    background-color: #fff;
+    width: 9%;
+    text-align: center;
+    border-bottom-right-radius: 8px;
+    max-width: 50px;
+    margin-right: 2em;
+}
+h1,h2{
+    margin: 0;
+}
+.details{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/* Card.css */
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.card.gold {
+    background-color: #FFB200;
+    color: black;
+}
+
+.card.silver {
+    background-color: #EEEDEB;
+    color: black;
+}
+
+.card.orange {
+    background-color: #FF4C4C;
+    color: white;
+}
+
+.serial {
+    background-color: #fff;
+    color: black;
+}
+
+.serial.gold {
+    background-color: black;
+    color: gold;
+}
+
+.serial.silver {
+    background-color: black;
+    color: silver;
+}
+
+.serial.orange {
+    background-color: black;
+    color: orange;
+}
+
+.details {
+    color: white;
+}
+
+.details.black {
+    color: black;
+}
+
+
+
+.card-desc{
+    width: 85%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 1100px;
+    border-bottom-right-radius: 50px;
+    padding: 0.8em 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8em;
+    border: 1.5px solid gray;
+    font-size: 1rem;
+    align-items: center;
+    margin-top: 0.4em;
+}
+.card-desc .time{
+    margin-right: 1.5em;
+    display: flex;
+    align-items: center;
+}
+.card-desc .serial{
+    background: none;
+}
+.card-desc .name h2,
+.card-desc .time h2 {
+    color: gold;
+}
+.card-desc .time{
+    display: flex;
+}
+footer{
+    height: 100vh;
+    background-image: url(./assets/BANER-SHANNH\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.add{
+    width: 25%;
+    
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.add button{
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    color:#fff;
+    background: none;
+    font-weight: bold;
+    border: 1.5px solid gray;
+
+}
+.add button:hover{
+    opacity: 0.5;
+    /* Modified for less blur and clearer text */
+text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6), 0 0 6px rgba(255, 255, 255, 0.4), 0 0 8px rgba(255, 255, 255, 0.2);
+
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto auto;
+    padding: 2em 2em;
+    border: 2px solid #fff;
+    background-image: url(./assets/images\ \(1\).jpeg)
+}
+form .player{
+    width: fit-content;
+    text-wrap: nowrap;
+    margin: 0 auto;
+    padding: 0.8em 1em;
+    background: none;
+    border: 1px solid #fff;
+    font-weight: bold;
+    color: #fff;
+}
+input{
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    color: white;
+    background: none;
+    font-size: 1rem;
+    border: none;
+    border: 1px solid #fff;
+    font-weight: bold;
+
+}
+input::placeholder{
+    color: #fff;
+}
+.cross{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+.cross button{
+    border: 1px solid grey;
+    background: none;
+    color: #fff;
+}
+.recent{
+    color: #fff;
+}
+.recent{
+    width: 95%;
+    margin: 1em auto;
+    max-width: 1100px;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6), 0 0 6px rgba(255, 255, 255, 0.4), 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* animation of card css */
+
+.card-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.card-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+}
+.card-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.reward{
+    color: black;
+    margin-left: auto;
+    margin-right: 1.5em;
+}
+.arrow{
+    border-radius: 50%;
+    padding: 0.5em 1em;
+    margin-left: 1.5em;
+    border: none;
+    transition: transform 0.6s;
+    width: 10%;
+    max-width: 70px;
+    background-color: #FFFFFF;
+    color: #000000;
+    outline: none;
+    text-align: center;
+
+
+}
+.arrow:hover{
+    transform: scale(1.2);
+}
+
+img{
+    max-width: 100%;
+    max-height:100px;
+}
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1425px)
+{
+    .score{
+        height: 1100px;
+    }
+}
+@media (max-width:600px){
+    html{
+        font-size: 10px;
+    }
+    .add button{
+        font-size: 0.8rem;
+    }
+    .player{
+        font-size: 0.8rem;
+    }
+    .score{
+        height: 700px;
+    }
+   
+}
+@media (min-width:1200px) {
+    form{
+        top: 70%;
+    }
+}
