@@ -51,7 +51,7 @@ img{
 }
 .card{
 
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.6);
     max-width: 1100px;
@@ -138,7 +138,7 @@ h1,h2{
 
 
 .card-desc{
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.6);
     max-width: 1100px;
@@ -150,6 +150,7 @@ h1,h2{
     border: 1.5px solid gray;
     font-size: 1rem;
     align-items: center;
+    margin-top: 0.4em;
 }
 .card-desc .time{
     margin-right: 1.5em;
@@ -197,7 +198,7 @@ text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6),
 }
 form{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 50%;
@@ -254,6 +255,57 @@ input::placeholder{
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6), 0 0 6px rgba(255, 255, 255, 0.4), 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
+/* animation of card css */
+
+.card-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.card-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+}
+.card-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.reward{
+    color: black;
+    margin-left: auto;
+    margin-right: 1.5em;
+}
+.arrow{
+    border-radius: 50%;
+    padding: 0.5em 1em;
+    margin-left: 1.5em;
+    border: none;
+    transition: transform 0.6s;
+    width: 10%;
+    max-width: 70px;
+    background-color: #FFFFFF;
+    color: #000000;
+    outline: none;
+    text-align: center;
+
+
+}
+.arrow:hover{
+    transform: scale(1.2);
+}
+
+img{
+    max-width: 100%;
+    max-height:100px;
+}
+
+
 
   
   
@@ -290,4 +342,9 @@ input::placeholder{
         height: 700px;
     }
    
+}
+@media (min-width:1200px) {
+    form{
+        top: 70%;
+    }
 }
